@@ -47,7 +47,7 @@ body{
     align-items: center;
 }
 
-#navbar-el{
+.navbar-el{
     border-width: 0px;
     border-color: rgba(0, 0, 0, 0);
     background-color: rgba(0, 0, 0, 0);
@@ -60,7 +60,7 @@ body{
     font-family: PT Serif Caption;
 }
 
-#navbar-el:hover{
+.navbar-el:hover{
     background-color: #1C457C;
     color:white;
     transition: all .1s ease-in-out;
