@@ -62,7 +62,13 @@ body{
 }
 
 .navbar-el:hover{
-    background-color: #1C457C;
+    background-color: #1c467cae;
     color:white;
     transition: all .1s ease-in-out;
+}
+
+
+
+#user-button{
+    background-color: #1c467c51;
 }
