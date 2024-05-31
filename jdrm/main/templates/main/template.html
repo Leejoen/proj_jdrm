@@ -21,10 +21,10 @@
             <p>admin</p>                
         </div>
         <div class="navbar">
-            <a class="navbar-el" id="main-button" href="#">Главная</a>
-            <a class="navbar-el" id="user-button" href="#">Пользователи</a>    
-            <a class="navbar-el" id="audits-button" href="#">Аудиты</a>
-            <a class="navbar-el" id="events-button" href="#">Мероприятия</a>
+            <a id="main-button" class="navbar-el" href="{% url 'main' %}">Главная</a>
+            <a id="user-button" class="navbar-el" href="{% url 'users' %}">Пользователи</a>    
+            <a id="audits-button" class="navbar-el" href="{% url 'audits' %}">Аудиты</a>
+            <a id="events-button" class="navbar-el" href="{% url 'events' %}">Мероприятия</a>
         </div>
         <div class="exit">
             <a class="rectangle" href='#'>
