@@ -1,7 +1,7 @@
 body{
     margin: 0;
     border-style: none;
-    height: 1024px;
+    height: 100%;
 }
 
 .header{
@@ -62,7 +62,7 @@ body{
 }
 
 .navbar-el:hover{
-    background-color: #1C457C;
+    background-color: #1c467cae;
     color:white;
     transition: all .1s ease-in-out;
 }

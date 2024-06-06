@@ -9,5 +9,87 @@
 {% endblock %}
 
 {% block content %}
-    <h1>USERS</h1>
+<div class="main-block">
+    <div class="navbar-second">
+        <div class="prev-users">
+            <h3>Пользователи</h3>
+        </div>
+        <div class="inform">
+            <p>Добавить пользователя</p>
+            <img class='filter' src="{% static 'users/filter.png' %}" alt="">
+            <img class='search' src="{% static 'users/search.png' %}" alt="">
+        </div>
+    </div>
+    <div class="users-cards">
+        <div class="container">
+            <div class="user-card">
+                <div class="inf">
+                    <p class="nick" id="card">arsentiev_valeriy</p>
+                    <p class="fio" id="card">АРСЕНТЬЕВ ВАЛЕРИЙ АЛЕКСЕЕВИЧ</p>
+                    <p class="work" id="card">Исполнитель</p>
+                    <p class="place" id="card">Завод “Москвовский центральный аппарат”</p>
+                </div>
+            </div>
+            <div class="hiddendiv">
+                <div class="name-pers">
+                    <div class="circle"></div>
+                    <div class="pers-info">
+                        <h4>arsentiev_valeriy</h4>
+                        <p class="fio">АРСЕНТЬЕВ ВАЛЕРИЙ АЛЕКСЕЕВИЧ</p>
+                    </div>
+
+                </div>
+                <div class="work-pers">
+                    <h3 class="work">Исполнитель</h3>
+                    <h3 class="place">Завод “Москвовский центральный аппарат”</h3>
+
+                </div>
+                <div class="set">
+                    <h4 class="red">Редактировать</h4>
+                    <h4 class="del">Удалить</h4>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="user-card">
+            <div class="inf">
+                <p class="nick" id="card">ivashenko_aleksey</p>
+                <p class="fio" id="card">ИВАЩЕНКО АЛЕКСЕЙ ПЕТРОВИЧ</p>
+                <p class="work" id="card">Исполнитель</p>
+                <p class="place" id="card">Завод “Москвовский центральный аппарат”</p>
+            </div>
+        </div>
+        <!-- <div class="hiddendiv">
+                
+        </div> -->
+
+        <div class="user-card">
+            <div class="inf">
+                <p class="nick" id="card">kornishon_vladimir</p>
+                <p class="fio" id="card">КОРНИШОН ВЛАДИМИР ЯКОВЛЕВИЧ</p>
+                <p class="work" id="card">Исполнитель</p>
+                <p class="place" id="card">Завод Астраханский</p>
+            </div>
+        </div>
+        <!-- <div class="hiddendiv">
+                
+        </div> -->
+        
+        <div class="user-card">
+            <div class="inf">
+                <p class="nick" id="card">petrov_oleg</p>
+                <p class="fio" id="card">ПЕТРОВ ОЛЕГ ГРИГОРЬЕВИЧ</p>
+                <p class="work" id="card">Исполнитель</p>
+                <p class="place" id="card">Завод Астраханский</p>
+            </div>
+        </div>
+        <!-- <div class="hiddendiv">
+                
+        </div> -->
+
+
+    </div>
+</div>
 {% endblock %}

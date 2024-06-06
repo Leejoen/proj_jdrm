@@ -1,0 +1,63 @@
+
+.name-factory{
+    height: 15%;
+    padding: 10px 20px 30px 20px;
+}
+
+.active-block{
+    display: flex;
+    height: 73.4vh;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.vis-block{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 20px ;
+    border-radius: 10px;
+}
+
+
+.clickers{
+    height: 6%;
+
+}
+
+.invisible-blocks{
+    height: 80%;
+    background-color: #F7F7F7;
+    border-radius: 10px 9px 8px 7px;
+}
+
+.radar_char{
+    width:693px;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+}
+
+.name{
+    display: flex;
+}
+
+
+.hren{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.date{
+    width:300px;
+    padding-right: 60px;
+}
+
+.analiz{
+    width: 300px;
+    padding-right: 60px;
+}

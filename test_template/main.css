@@ -1,7 +1,7 @@
 body{
     margin: 0;
     border-style: none;
-    height: 1024px;
+    height: 100%;
 }
 
 .header{
@@ -11,7 +11,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px 40px 10px;
 
 }
 
@@ -68,96 +68,51 @@ body{
 }
 
 
-/* ____________________________ */
+/* 
+#user-button{
+    background-color: #1c467c51;
+} */
 
-.navbar-second{
+
+.name-factory{
+    height: 15%;
+    padding: 10px 20px 30px 20px;
+}
+
+.active-block{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    height: 73.4vh;
 }
 
-.filter{
-    height: 30px;
+.vis-block{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.search{
-    height: 30px;
+.hren{
+    width: 40s;
+    background-color: black;
 }
 
+.clickers{
+    height: 6%;
 
-.inform{
-    display: flex; 
-    width: 600px;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
 }
 
-.prev-users{
-    padding-left: 30px;
-}
-
-.users-card{
-    /* display: flex; */
-}
-
-.user-card{
+.invisible-blocks{
+    height: 80%;
     background-color: #F7F7F7;
-    width: 600px;
-    height: 180px;
-    margin: 30px;
-
-    border-radius: 14px;
-    cursor:pointer;
-
+    border-radius: 10px 9px 8px 7px;
 }
 
-.hiddendiv{
+.radar_char{
+    width:693px;
     background-color: #F7F7F7;
-    width: 600px;
-    height: 360px;
-    margin: 30px;
-    border-radius: 14px;
-    display:none;
-
-    padding:40px
+    border-radius: 10pxs;
 }
 
-.user-card:hover + .hiddendiv{
-    display:block;
-}
-
-
-.inf{
-    padding: 10px;
-}
-
-.fio{
-    font-size: 20px
-}
-
-.container{
-    display: flex;
-}
-
-.circle{
-    width: 80px;
-    height: 80px;
-    background-color: #D9D9D9;
-    border-radius: 100px;
-}
-
-.pers-info{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.set{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+.name{
+    display: flex;i
 }
