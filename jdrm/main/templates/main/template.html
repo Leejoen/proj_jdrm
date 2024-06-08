@@ -21,10 +21,10 @@
             <p>admin</p>                
         </div>
         <div class="navbar">
-            <a id="main-button" class="navbar-el" href="{% url 'main' %}">Главная</a>
-            <a id="user-button" class="navbar-el" href="{% url 'users' %}">Пользователи</a>    
-            <a id="audits-button" class="navbar-el" href="{% url 'audits' %}">Аудиты</a>
-            <a id="events-button" class="navbar-el" href="{% url 'events' %}">Мероприятия</a>
+            <a id="main-button" class="navbar-el {% if request.path|get_name_url == '' %}active{% endif %}" href="{% url 'main' %}">Главная</a>
+            <a id="user-button" class="navbar-el {% if request.path|get_name_url == 'users' %}active{% endif %}" href="{% url 'users' %}">Пользователи</a>    
+            <a id="audits-button" class="navbar-el {% if request.path|get_name_url == 'audits' %}active{% endif %}" href="{% url 'audits' %}">Аудиты</a>
+            <a id="events-button" class="navbar-el {% if request.path|get_name_url == 'events' %}active{% endif %}" href="{% url 'events' %}">Мероприятия</a>
         </div>
         <div class="exit">
             <a class="rectangle" href="{% url 'auth' %}">

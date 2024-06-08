@@ -1,10 +1,10 @@
-body{
+body {
     margin: 0;
     border-style: none;
     height: 100%;
 }
 
-.header{
+.header {
     display: flex;
     margin: 0;
     flex-wrap: nowrap;
@@ -15,7 +15,7 @@ body{
 
 }
 
-.user{
+.user {
     display: flex;
     width: 6em;
     flex-direction: row;
@@ -23,7 +23,7 @@ body{
     justify-content: space-evenly;
 }
 
-.navbar{
+.navbar {
     display: flex;
     width: 26em;
     justify-content: space-between;
@@ -33,7 +33,7 @@ body{
     border-radius: 8px;
 }
 
-.rectangle{
+.rectangle {
     display: flex;
     background-color: #1C457C;
     /* width: 135px; */
@@ -48,7 +48,7 @@ body{
     text-decoration: none;
 }
 
-.navbar-el{
+.navbar-el {
     border-width: 0px;
     border-color: rgba(0, 0, 0, 0);
     background-color: rgba(0, 0, 0, 0);
@@ -61,8 +61,13 @@ body{
     font-family: PT Serif Caption;
 }
 
-.navbar-el:hover{
+.navbar-el:hover {
     background-color: #1c467cae;
     color:white;
     transition: all .1s ease-in-out;
+}
+
+.active {
+    background-color: #1c467cae;
+    color:white;
 }
