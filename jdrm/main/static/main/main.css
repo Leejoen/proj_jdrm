@@ -1,7 +1,26 @@
-
 .name-factory{
     height: 15%;
     padding: 10px 20px 30px 20px;
+}
+
+.name-factory .factory {
+    font-size: 20px;
+    width: max-content;
+    height: 20px;
+    margin: 0;
+}
+
+.name-factory .name {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+}
+
+.name-factory .name h2 {
+    font-size: 25px;
+    margin-right: 20px;
 }
 
 .active-block{
@@ -17,32 +36,61 @@
     width: 60%;
     flex-direction: column;
     justify-content: flex-start;
-    padding-left: 20px ;
-    border-radius: 10px;
+    padding-left: 20px;
 }
 
 
 .clickers{
-    height: 6%;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    width: max-content;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7F7F7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 
+.clicker {
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    border: none;
+    background-color: #E7E7E7;
+    cursor: pointer;
+    color: #000;
+}
+
+.clickers .active {
+    background-color: #F7F7F7;
+    cursor: default;
+}
+
+#clicker1 {
+    border-top-left-radius: 10px;
+}
+
+#clicker2 {
+    border-top-right-radius: 10px;
 }
 
 .invisible-blocks{
     height: 80%;
     background-color: #F7F7F7;
-    border-radius: 10px 9px 8px 7px;
+    border-radius: 0 10px 10px 10px;
 }
 
-.radar_char{
+.invisible-blocks .disable {
+    display: none;
+}
+
+.char{
     width:693px;
     background-color: #F7F7F7;
     border-radius: 10px;
 }
-
-.name{
-    display: flex;
-}
-
 
 .hren{
     display: flex;

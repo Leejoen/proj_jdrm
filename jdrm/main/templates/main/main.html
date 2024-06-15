@@ -6,35 +6,38 @@
 
 {% block links %}
     <link rel="stylesheet" href="{% static 'main/main.css' %}">
+    <script src="{% static 'main/main.js' %}"></script>
 {% endblock %}
 
 {% block content %}
 
 <div class="main">
     <div class="name-factory">
-        
-        <div class="name"></div>
-            <h2>Завод</h2>
+        <p class="factory">Завод</p>
+        <div class="name">
             <h2>МОСКОВСКИЙ ЦЕНТРАЛЬНЫЙ АППАРАТ</h2>
-            <!-- <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.20825 15.8927L9.20825 0.166626L11.7916 0.166626L11.7916 15.8927L19.0249 8.65933L20.8333 10.5L10.4999 20.8333L0.166586 10.5L1.97492 8.65933L9.20825 15.8927Z" fill="black"/>
-            </svg>   -->
+            </svg> 
         </div>
-                        
+        <p class="factory mix">Краткое или полное описание выбранного завода</p>
     </div>
+
     <div class="active-block">
         <div class="vis-block">
             <div class="clickers">
-                <div id="clicker1" class="clicker"></div>
-                <div id="clicker2" class="clicker"></div>
+                <button id="clicker1" class="clicker active" onclick="switch_to()">Лепестковая диаграмма</button>
+                <button id="clicker2" class="clicker" onclick="switch_to()">Столбчатая диаграмма</button>
             </div>
-            <div class="invisible-blocks">
 
-                    <div class="invisible" id="block1">
-                        <img class="radar_char" src="{% static 'main/image.png' %}">
+            <div class="invisible-blocks">
+                    <div class="invisible" id="radar_char" >
+                        <img class="char" src="{% static 'main/radar_char.png' %}">
                     </div>
-                    <!-- <div class="invisible" id="block2"> -->
-                    
+
+                    <div class="invisible disable" id="bar_char"> 
+                        <img class="char" src="{% static 'main/bar_char.png' %}">    
+                    </div>
             </div>
         </div>
 
