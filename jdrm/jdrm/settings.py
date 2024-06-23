@@ -79,17 +79,21 @@ WSGI_APPLICATION = 'jdrm.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
 
     # 'default': {
-    #     'NAME': 'my_database',
-    #     'ENGINE': 'sqlserver_ado',
-    #     'HOST': 'dbserver\\ss2012',
-    #     'USER': '',
-    #     'PASSWORD': '',
+    #     'ENGINE': 'mssql',
+    #     'NAME': 'master',
+    #     'HOST': 'dbserver\\95.163.231.54',
+    #     'USER': 'sa',
+    #     'PASSWORD': 'StrongP@ssword',
+    #     'OPTIONS':{
+    #         'driver':'ODBC Driver 17 for SQL Server',
+    #         'Trusted_Connection':'yes',
+        # }
     # }
 }
 
