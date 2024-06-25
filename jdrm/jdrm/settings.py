@@ -84,17 +84,18 @@ DATABASES = {
     #     'NAME': BASE_DIR / 'db.sqlite3',
     # }
 
-    # 'default': {
-    #     'ENGINE': 'mssql',
-    #     'NAME': 'master',
-    #     'HOST': 'dbserver\\95.163.231.54',
-    #     'USER': 'sa',
-    #     'PASSWORD': 'StrongP@ssword',
-    #     'OPTIONS':{
-    #         'driver':'ODBC Driver 17 for SQL Server',
-    #         'Trusted_Connection':'yes',
-        # }
-    # }
+    'default': {
+        'ENGINE': 'mssql',
+        'NAME': 'master',
+        'HOST': '95.163.231.54',
+        'PORT':'1433',
+        'USER': 'sa',
+        'PASSWORD': 'StrongP@ssword',
+        'OPTIONS':{
+            'driver':'ODBC Driver 17 for SQL Server',
+            'Trusted_Connection':'yes',
+        }
+    }
 }
 
 
