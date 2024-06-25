@@ -26,66 +26,56 @@
 }
 
 .users-card{
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
 }
 
 .user-card{
     background-color: #F7F7F7;
-    width: 600px;
+    width: 55%;
     height: 180px;
     margin: 30px;
-
     border-radius: 14px;
-    cursor:pointer;
-
 }
-
-.hiddendiv{
-    background-color: #F7F7F7;
-    width: 600px;
-    height: 360px;
-    margin: 30px;
-    border-radius: 14px;
-    display:none;
-
-    padding:40px
-}
-
-.user-card:hover + .hiddendiv{
-    display:block;
-}
-
 
 .inf{
     padding: 10px;
+    padding-left: 15px;
+    height: 160px;
+    position: relative;
 }
 
-.fio{
-    font-size: 20px
+.inf .nick {
+    font-size: 18px;
+    margin: 0;
+    margin-top: 10px;
 }
 
-.container{
-    display: flex;
+.inf .fio{
+    font-size: 25px;
+    margin: 0;
+    margin-top: 10px;
 }
 
-.circle{
-    width: 80px;
-    height: 80px;
-    background-color: #D9D9D9;
-    border-radius: 100px;
+.inf .work {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 25px;
 }
 
-.pers-info{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.inf .place {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 10px;
 }
 
-.set{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+.inf .change {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    color: #1C457C;
+    cursor: pointer;
 }
