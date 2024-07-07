@@ -9,5 +9,40 @@
 {% endblock %}
 
 {% block content %}
-    <h1>ЗДЕСЬ БУДУТ МЕРОПРИЯТИЯ</h1>
+<div class="main-block">
+    <div class="navbar-second">
+        <div class="prev-audits">
+            <h3>План мероприятий</h3>
+        </div>
+        <div class="inform">
+            <p>Добавить мероприятие</p>
+            <img class='filter' src="{% static 'users/filter.png' %}" alt="">
+            <img class='search' src="{% static 'users/search.png' %}" alt="">
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <div class="inf">
+                <p class="date">1 июня 2024 г. 15:00</p>
+                <p class="name">НАЗВАНИЕ МЕРОПРИЯТИЯ №1</p>
+                <p class="description">Краткое или полное название мероприятия №1</p>
+                <p class="place">Место проведения</p>
+                <p class="status">Статус: согласовано</p>
+                <button class="change">Редактировать</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="inf">
+                <p class="date">23 июня 2024 г. 10:00</p>
+                <p class="name">НАЗВАНИЕ МЕРОПРИЯТИЯ №2</p>
+                <p class="description">Краткое или полное название мероприятия №2</p>
+                <p class="place">Место проведения</p>
+                <p class="status">Статус: не согласовано</p>
+                <button class="change">Редактировать</button>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

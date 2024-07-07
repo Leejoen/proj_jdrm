@@ -9,5 +9,49 @@
 {% endblock %}
 
 {% block content %}
-    <h1>ЗДЕСЬ БУДУТ АУДИТЫ</h1>
+    <div class="main-block">
+        <div class="navbar-second">
+            <div class="prev-audits">
+                <h3>Аудиты</h3>
+            </div>
+            <div class="inform">
+                <p>Добавить новый аудит</p>
+                <img class='filter' src="{% static 'users/filter.png' %}" alt="">
+                <img class='search' src="{% static 'users/search.png' %}" alt="">
+            </div>
+        </div>
+
+        <div class="vis-block">
+            <div class="cards">
+                <div class="card">
+                    <div class="color" style="background-color: #4AC24F;"></div>
+                    <div class="inf">
+                        <p class="date">1 июня 2024 г. 15:00</p>
+                        <p class="name">НАЗВАНИЕ АУДИТА №1</p>
+                        <p class="description">Краткое или полное название аудита №1</p>
+                        <p class="place">Место проведения аудита</p>
+                        <p class="status">Статус: согласовано</p>
+                        <button class="more">Подробнее</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="color" style="background-color: #EA3342;"></div>
+                    <div class="inf">
+                        <p class="date">23 июня 2024 г. 10:00</p>
+                        <p class="name">НАЗВАНИЕ АУДИТА №2</p>
+                        <p class="description">Краткое или полное название аудита №2</p>
+                        <p class="place">Место проведения аудита</p>
+                        <p class="status">Статус: не согласовано</p>
+                        <button class="more">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inf-block">
+                <p class="inform">Раздел аудита</p>
+                <p class="inform">Выбрать статус аудита</p>
+            </div>
+        </div>
+    </div>
 {% endblock %}
