@@ -21,7 +21,7 @@
     flex-direction: row;
 }
 
-.prev-audits{
+.prev{
     padding-left: 30px;
 }
 
@@ -79,7 +79,7 @@
     margin-top: 5px;
 }
 
-.inf .place {
+.inf .dop {
     font-size: 20px;
     margin: 0;
     margin-top: 20px;

@@ -21,11 +21,11 @@
     flex-direction: row;
 }
 
-.prev-audits{
-    padding-left: 30px;
+.prev{
+    padding-left: 30px; 
 }
 
-.cards {
+.cards{
     display: flex;
     flex-direction: column;
 }
@@ -64,7 +64,7 @@
     margin-top: 5px;
 }
 
-.inf .place {
+.inf .dop {
     font-size: 20px;
     margin: 0;
     margin-top: 20px;
