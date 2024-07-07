@@ -104,11 +104,64 @@
 }
 
 .inf-block {
-    width: 40%;
-    text-align: center;
+    width: 35%;
+    padding: 15px 20px 20px 20px;
 }
 
-.inf-block .inform {
+.inf-block .stats_choice {
     font-size: 18px;
     opacity: .6;
+    margin: 0;
+    margin-bottom: 5px;
+
+}
+
+.inf-block .chapter {
+    background-color: #F7F7F7;
+    width: 100%;
+    height: 40px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.inf-block .chapter .chapter-text {
+    font-size: 20px;
+}
+
+.inf-block .status {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inf-block .status .status-block {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #F7F7F7;
+    height: 60px;
+    border-radius: 14px;
+    align-items: center;
+    justify-content: center;
+}
+
+.inf-block .status .status-block .text {
+    font-size: 13px;
+    opacity: .6;
+}
+
+.inf-block .hide-ready {
+    border: 2px solid #1C457C;
+    border-radius: 15px;
+    background-color: inherit;
+    color: #000000;
+    cursor: pointer;
+    font-size: 18px;
+    height: 30px;
+    width: 100%;
+    margin-top: 35px;
 }
