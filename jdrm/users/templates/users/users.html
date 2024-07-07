@@ -2,7 +2,7 @@
 
 {% load static %}
 
-{% block title %}Пользователи{% endblock %}
+{% block title %}Вкладка №1{% endblock %}
 
 {% block links %}
     <link rel="stylesheet" href="{% static 'users/users.css' %}">
@@ -11,33 +11,33 @@
 {% block content %}
 <div class="main-block">
     <div class="navbar-second">
-        <div class="prev-users">
-            <h3>Пользователи</h3>
+        <div class="prev">
+            <h3>Вкладка №1</h3>
         </div>
         <div class="inform">
-            <p>Добавить пользователя</p>
+            <p>Добавить карточку</p>
             <img class='filter' src="{% static 'users/filter.png' %}" alt="">
             <img class='search' src="{% static 'users/search.png' %}" alt="">
         </div>
     </div>
     
-    <div class="users-cards">
-        <div class="user-card">
+    <div class="cards">
+        <div class="card">
             <div class="inf">
-                <p class="nick">arsentiev_valeriy</p>
-                <p class="fio">АРСЕНТЬЕВ ВАЛЕРИЙ АЛЕКСЕЕВИЧ</p>
-                <p class="work">Исполнитель</p>
-                <p class="place">Завод “Москвовский центральный аппарат”</p>
+                <p class="little-inf">малая информация</p>
+                <p class="name">НАЗВАНИЕ КАРТОЧКИ</p>
+                <p class="add-inf-1">Доп. сведения №1</p>
+                <p class="add-inf-2">Доп. сведения №2</p>
                 <button class="change">Редактировать</button>
             </div>
         </div>
         
-        <div class="user-card">
+        <div class="card">
             <div class="inf">
-                <p class="nick">klbjvu</p>
-                <p class="fio">Петров Петр Петрович</p>
-                <p class="work">Исполнитель</p>
-                <p class="place">Завод “Москвовский центральный аппарат”</p>
+                <p class="little-inf">малая информация</p>
+                <p class="name">НАЗВАНИЕ КАРТОЧКИ</p>
+                <p class="add-inf-1">Доп. сведения №1</p>
+                <p class="add-inf-2">Доп. сведения №2</p>
                 <button class="change">Редактировать</button>
             </div>
         </div>

@@ -21,16 +21,16 @@
     flex-direction: row;
 }
 
-.prev-users{
+.prev {
     padding-left: 30px;
 }
 
-.users-cards{
+.cards{
     display: flex;
     flex-direction: column;
 }
 
-.user-card{
+.card{
     background-color: #F7F7F7;
     width: 55%;
     height: 180px;
@@ -45,25 +45,25 @@
     position: relative;
 }
 
-.inf .nick {
+.inf .little-inf {
     font-size: 18px;
     margin: 0;
     margin-top: 10px;
 }
 
-.inf .fio{
+.inf .name{
     font-size: 25px;
     margin: 0;
     margin-top: 10px;
 }
 
-.inf .work {
+.inf .add-inf-1 {
     font-size: 20px;
     margin: 0;
     margin-top: 25px;
 }
 
-.inf .place {
+.inf .add-inf-2 {
     font-size: 20px;
     margin: 0;
     margin-top: 10px;
