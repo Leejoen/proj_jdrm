@@ -152,6 +152,8 @@
 .inf-block .status .status-block .text {
     font-size: 13px;
     opacity: .6;
+    margin: 0;
+    margin-top: 5px;
 }
 
 .inf-block .hide-ready {
