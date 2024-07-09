@@ -1,0 +1,71 @@
+.navbar-second{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filter{
+    height: 30px;
+}
+
+.search{
+    height: 30px;
+}
+
+
+.inform{
+    display: flex; 
+    width: 400px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.prev{
+    padding-left: 30px;
+}
+
+.title-block {
+    height: 260px;
+    background-color: #F7F7F7;
+    margin: 20px 30px;
+    border-radius: 14px;
+}
+
+.title-block .inf{
+    padding: 15px;
+    padding-left: 20px;
+    height: 230px;
+    position: relative;
+}
+
+.title-block .inf .chapter {
+    font-size: 18px;
+    margin: 0;
+    
+}
+
+.title-block .inf .name{
+    font-size: 25px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.title-block .inf .description {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.title-block .inf .dop {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.title-block .inf .status {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    margin: 0;
+}
