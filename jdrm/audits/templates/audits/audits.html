@@ -15,7 +15,7 @@
                 <h3>Вкладка №2</h3>
             </div>
             <div class="inform">
-                <p>Добавить новую карточку</p>
+                <a href="{% url 'new_audit' %}" class="new_card">Добавить новый аудит</a>
                 <img class='filter' src="{% static 'users/filter.png' %}" alt="">
                 <img class='search' src="{% static 'users/search.png' %}" alt="">
             </div>
@@ -23,29 +23,19 @@
 
         <div class="vis-block">
             <div class="cards">
+                {% for el in audits %}
                 <div class="card">
-                    <div class="color" style="background-color: #4AC24F;"></div>
+                    <div class="color" {% if el.status == 'Completed' %}style="background-color: #4AC24F;"{% endif %} {% if el.status == 'Not completed' %}style="background-color: #EA3342;"{% endif %} {% if el.status == 'Pending' %}style="background-color: #FF9900;"{% endif %}></div>
                     <div class="inf">
-                        <p class="date">дата</p>
-                        <p class="name">НАЗВАНИЕ КАРТОЧКИ №1</p>
-                        <p class="description">Краткое или полное описание карточки №1</p>
-                        <p class="dop">Доп. информация по карточке</p>
-                        <p class="status">Статус: положительно</p>
-                        <a href="{% url 'audit' %}" class="more">Подробнее</a>
+                        <p class="date">{{ el.date }}</p>
+                        <p class="name">{{ el.name }}</p>
+                        <p class="description">{{ el.brief_description }}</p>
+                        <p class="dop">{{ el.auditor }}</p>
+                        <p class="status">Статус: {{ el.status|get_status }}</p>
+                        <a href="{% url 'audit' el.report_id %}" class="more">Подробнее</a>
                     </div>
                 </div>
-                
-                <div class="card">
-                    <div class="color" style="background-color: #EA3342;"></div>
-                    <div class="inf">
-                        <p class="date">дата</p>
-                        <p class="name">НАЗВАНИЕ КАРТОЧКИ №2</p>
-                        <p class="description">Краткое или полное описание карточки №2</p>
-                        <p class="dop">Доп. информация по карточке</p>
-                        <p class="status">Статус: отрицательно</p>
-                        <button class="more">Подробнее</button>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
 
             <div class="inf-block">
